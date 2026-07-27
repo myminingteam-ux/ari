@@ -3,144 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Victory Consultancy — strategic advisory, capital and growth, and partnerships for consequential decisions." />
+  <meta name="description" content="Victory Consultancy — strategic advisory, capital access and global influence for consequential decisions." />
   <title>Victory Consultancy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Victory Consultancy home">
-      <img src="https://drive.google.com/uc?export=view&id=1x_z5ooyF22M6ESlL6EWqcM4hHF7viKEG" alt="Victory Consultancy wings logo" />
+      <img src="https://drive.google.com/uc?export=view&id=1x_z5ooyF22M6ESlL6EWqcM4hHF7viKEG" alt="Victory Consultancy wings logo" referrerpolicy="no-referrer" />
     </a>
     <nav class="desktop-nav" aria-label="Primary navigation">
       <a href="#mandates">Mandates</a>
       <a href="#approach">Approach</a>
-      <a href="#engagement">Engagement</a>
-      <a class="nav-cta" href="#contact">Discuss a mandate</a>
+      <a href="#engagement">Engagements</a>
+      <a href="#about">About</a>
+      <button class="nav-contact" type="button" data-contact-open>Contact</button>
     </nav>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-      <span></span><span></span>
-    </button>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#mandates">Mandates</a>
       <a href="#approach">Approach</a>
-      <a href="#engagement">Engagement</a>
-      <a href="#contact">Discuss a mandate</a>
+      <a href="#engagement">Engagements</a>
+      <a href="#about">About</a>
+      <button type="button" data-contact-open>Contact</button>
     </div>
   </header>
 
   <main>
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">Independent strategic consultancy</p>
-        <h1>Clarity for <em>consequential</em> decisions.</h1>
-        <p class="hero-intro">We help leaders position complex opportunities, align the right capital and partnerships, and move from intent to execution.</p>
-        <a class="text-link" href="#contact">Discuss a mandate</a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent strategic consultancy</p>
+          <h1 id="hero-title">Strategic advisory.<br>Capital access.<br><em>Global influence.</em></h1>
+          <p>We partner with ambitious leaders to unlock opportunity, create value and achieve decisive outcomes.</p>
+          <button class="primary-button" type="button" data-contact-open>Discuss a mandate</button>
+        </div>
       </div>
-      <div class="hero-orbit" aria-hidden="true">
-        <div class="orbit-line orbit-one"></div>
-        <div class="orbit-line orbit-two"></div>
-        <div class="orbit-core"></div>
-      </div>
-      <div class="credibility-strip">
-        <span>Strategy</span><span>Capital</span><span>Partnerships</span>
-        <small>Europe · Middle East · Global network</small>
+      <div class="credibility-bar">
+        <div class="section-shell credibility-inner">
+          <div><strong>Strategy</strong><span>Clarity before movement</span></div>
+          <div><strong>Capital</strong><span>Access with purpose</span></div>
+          <div><strong>Partnerships</strong><span>Execution over theatre</span></div>
+          <div><strong>Global reach</strong><span>Europe · Middle East · Beyond</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="mandates section-shell" id="mandates">
-      <div class="section-heading compact-heading">
-        <p class="eyebrow">Selected mandates</p>
-        <h2>Focused expertise, selected by the decision in front of you.</h2>
-      </div>
-      <div class="mandate-layout">
-        <div class="mandate-tabs" role="tablist" aria-label="Consultancy mandates">
-          <button class="mandate-tab active" role="tab" aria-selected="true" data-panel="strategy"><span>01</span> Strategic advisory</button>
-          <button class="mandate-tab" role="tab" aria-selected="false" data-panel="capital"><span>02</span> Capital & growth</button>
-          <button class="mandate-tab" role="tab" aria-selected="false" data-panel="partnerships"><span>03</span> Partnerships & market entry</button>
+    <section class="mandates dossier-section" id="mandates">
+      <div class="section-shell mandates-grid">
+        <div class="mandates-intro">
+          <p class="eyebrow">Our mandates</p>
+          <h2>Three core mandates.<br>One tailored approach.</h2>
+          <div class="mandate-tabs" role="tablist" aria-label="Victory Consultancy mandates">
+            <button class="mandate-tab active" type="button" role="tab" aria-selected="true" data-panel="strategy"><span>01</span>Strategic advisory</button>
+            <button class="mandate-tab" type="button" role="tab" aria-selected="false" data-panel="capital"><span>02</span>Capital &amp; growth</button>
+            <button class="mandate-tab" type="button" role="tab" aria-selected="false" data-panel="partnerships"><span>03</span>Partnerships &amp; market entry</button>
+          </div>
         </div>
         <div class="mandate-panel" id="mandate-panel">
-          <p class="panel-index">01 / 03</p>
+          <p class="panel-count">01 / 03</p>
           <h3>Strategic advisory</h3>
-          <p>Frame the decision, expose its commercial implications, and establish a route that can be executed with confidence.</p>
+          <p>We help leadership teams define direction, solve complex challenges and build strategies that create enduring competitive advantage.</p>
           <ul>
-            <li>Positioning and strategic direction</li>
-            <li>Decision architecture and stakeholder alignment</li>
-            <li>Commercial narrative and executive preparation</li>
+            <li>Strategy and positioning</li>
+            <li>Commercial due diligence</li>
+            <li>Operating model and performance</li>
           </ul>
-          <a class="text-link" href="#contact">View mandate</a>
+          <button class="outline-button" type="button" data-contact-open>Explore mandate</button>
+        </div>
+        <div class="mandate-visual" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="approach dossier-section" id="approach">
+      <div class="section-shell">
+        <div class="approach-heading">
+          <div>
+            <p class="eyebrow">Our approach</p>
+            <h2>We work inside the decision.</h2>
+          </div>
+          <p>Our approach is built on three principles that guide every mandate from first conversation to final outcome.</p>
+        </div>
+        <div class="principles">
+          <article><span>01</span><h3>Clarity before movement</h3><p>Define the right objective before deploying resources.</p></article>
+          <article><span>02</span><h3>Access with purpose</h3><p>Connect you to the right people, not simply more people.</p></article>
+          <article><span>03</span><h3>Execution over theatre</h3><p>Deliver outcomes that stand up to real-world reality.</p></article>
+        </div>
+        <div class="process-block">
+          <div class="process-heading">
+            <p class="eyebrow">Our process</p>
+            <h3>A focused journey from insight to impact.</h3>
+          </div>
+          <div class="process" aria-label="Engagement process">
+            <button class="process-step active" type="button" data-process="Diagnose"><span>01</span><strong>Diagnose</strong><small>Understand the mandate and define the challenge.</small></button>
+            <button class="process-step" type="button" data-process="Position"><span>02</span><strong>Position</strong><small>Build the right strategic angle and define the path.</small></button>
+            <button class="process-step" type="button" data-process="Connect"><span>03</span><strong>Connect</strong><small>Introduce the right stakeholders and open doors.</small></button>
+            <button class="process-step" type="button" data-process="Execute"><span>04</span><strong>Execute</strong><small>Support delivery and drive measurable results.</small></button>
+          </div>
+          <p class="process-detail" id="process-detail">Understand the mandate, define the challenge and establish what success must look like.</p>
         </div>
       </div>
     </section>
 
-    <section class="approach section-shell" id="approach">
-      <div class="approach-statement">
-        <p class="eyebrow">Our approach</p>
-        <h2>We do not advise from the sidelines. We work inside the decision.</h2>
-      </div>
-      <div class="principles">
-        <article><span>01</span><h3>Clarity before movement</h3><p>Define the commercial objective before deploying resources.</p></article>
-        <article><span>02</span><h3>Access with purpose</h3><p>Open the right doors rather than the most doors.</p></article>
-        <article><span>03</span><h3>Execution over theatre</h3><p>Build decisions that survive contact with reality.</p></article>
-      </div>
-      <div class="process" aria-label="Engagement process">
-        <button class="process-step active" data-process="Diagnose"><span>01</span> Diagnose</button>
-        <button class="process-step" data-process="Position"><span>02</span> Position</button>
-        <button class="process-step" data-process="Connect"><span>03</span> Connect</button>
-        <button class="process-step" data-process="Execute"><span>04</span> Execute</button>
-      </div>
-      <p class="process-detail" id="process-detail">Clarify the decision, constraints, stakeholders and commercial stakes.</p>
-    </section>
-
-    <section class="engagement section-shell" id="engagement">
-      <div class="engagement-visual" aria-hidden="true">
-        <div class="map-grid"></div>
-        <div class="market-label">Europe / Middle East</div>
-      </div>
-      <div class="engagement-copy">
-        <p class="eyebrow">Featured engagement</p>
-        <h2>From market interest to active commercial discussions.</h2>
-        <dl>
-          <div><dt>The mandate</dt><dd>Private-market expansion into a new region.</dd></div>
-          <div><dt>The intervention</dt><dd>Positioning, partner identification and executive introductions.</dd></div>
-          <div><dt>The outcome</dt><dd>A shortened path from strategic intent to qualified opportunity.</dd></div>
-        </dl>
-        <button class="text-button" type="button" data-dialog-open>Read engagement</button>
+    <section class="engagement dossier-section" id="engagement">
+      <div class="section-shell engagement-grid">
+        <div class="engagement-copy">
+          <p class="eyebrow">Featured engagement</p>
+          <h2>Private market expansion into a new region.</h2>
+          <p class="engagement-intro">We supported a building-investment firm’s expansion into a new market through strategy, partner identification and executive introductions.</p>
+          <div class="engagement-results">
+            <p><span>01</span>Identified and engaged key local partners</p>
+            <p><span>02</span>Secured regulatory and market access</p>
+            <p><span>03</span>Accelerated the path from entry to active deals</p>
+          </div>
+          <button class="outline-button" type="button" data-dialog-open>View all engagements</button>
+        </div>
+        <div class="engagement-visual" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="contact section-shell" id="contact">
-      <div>
-        <p class="eyebrow">Start a conversation</p>
-        <h2>A consequential decision deserves a focused conversation.</h2>
+    <section class="closing" id="about">
+      <div class="closing-image" aria-hidden="true"></div>
+      <div class="closing-shade" aria-hidden="true"></div>
+      <div class="section-shell closing-inner">
+        <div class="closing-copy">
+          <p class="eyebrow">Ready to discuss</p>
+          <h2>A consequential decision deserves a focused conversation.</h2>
+          <p>Let’s discuss your mandate.</p>
+          <button class="primary-button" type="button" data-contact-open>Start the conversation</button>
+        </div>
+        <div class="closing-mark" aria-hidden="true">
+          <img src="https://drive.google.com/uc?export=view&id=1x_z5ooyF22M6ESlL6EWqcM4hHF7viKEG" alt="" referrerpolicy="no-referrer" />
+        </div>
       </div>
-      <form class="contact-form" action="mailto:contact@victoryconsultancy.com" method="post" enctype="text/plain">
-        <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Mandate<textarea name="mandate" rows="3" required></textarea></label>
-        <button type="submit">Discuss a mandate</button>
-      </form>
     </section>
   </main>
 
   <footer>
-    <img src="https://drive.google.com/uc?export=view&id=1x_z5ooyF22M6ESlL6EWqcM4hHF7viKEG" alt="" />
-    <p>Strategy. Capital. Partnerships.</p>
-    <small>Victory Consultancy · Europe · Middle East · Global network</small>
+    <div class="section-shell footer-grid">
+      <div class="footer-brand">
+        <img src="https://drive.google.com/uc?export=view&id=1x_z5ooyF22M6ESlL6EWqcM4hHF7viKEG" alt="" referrerpolicy="no-referrer" />
+        <div><strong>Victory Consultancy</strong><span>Strategy. Capital. Partnerships.</span></div>
+      </div>
+      <div><strong>Mandates</strong><a href="#mandates">Strategic advisory</a><a href="#mandates">Capital &amp; growth</a><a href="#mandates">Market entry</a></div>
+      <div><strong>Company</strong><a href="#approach">Our approach</a><a href="#engagement">Engagements</a><button type="button" data-contact-open>Contact</button></div>
+      <div><strong>Connect</strong><a href="mailto:contact@victory-consultancy.com">contact@victory-consultancy.com</a><span>Europe · Middle East · Global network</span></div>
+    </div>
+    <div class="section-shell footer-bottom"><small>© 2026 Victory Consultancy. All rights reserved.</small><small>Confidential · Discreet · Focused</small></div>
   </footer>
 
   <dialog class="engagement-dialog">
-    <button class="dialog-close" type="button" aria-label="Close engagement">Close</button>
-    <p class="eyebrow">Selected engagement</p>
-    <h2>Regional market entry</h2>
-    <p>Victory Consultancy structured the market-entry thesis, aligned decision makers around a focused commercial narrative, identified a qualified partner set, and prepared the executive team for targeted discussions.</p>
-    <p>The work reduced exploratory noise and concentrated attention on the relationships most likely to advance the mandate.</p>
+    <button class="dialog-close" type="button">Close</button>
+    <p class="eyebrow">Selected engagements</p>
+    <h2>Focused work. Measurable movement.</h2>
+    <div class="dialog-engagements">
+      <article><span>01</span><h3>Regional market entry</h3><p>Market thesis, local partner identification and executive activation.</p></article>
+      <article><span>02</span><h3>Capital positioning</h3><p>Growth narrative, investor preparation and targeted access.</p></article>
+      <article><span>03</span><h3>Strategic reset</h3><p>Executive alignment, operating priorities and delivery architecture.</p></article>
+    </div>
   </dialog>
 
-  <a class="mobile-sticky-cta" href="#contact">Discuss a mandate</a>
+  <dialog class="contact-dialog">
+    <button class="dialog-close contact-close" type="button">Close</button>
+    <p class="eyebrow">Discuss a mandate</p>
+    <h2>Start with the decision in front of you.</h2>
+    <form action="mailto:contact@victory-consultancy.com" method="post" enctype="text/plain">
+      <label>Name<input name="name" type="text" required></label>
+      <label>Email<input name="email" type="email" required></label>
+      <label>Mandate<textarea name="mandate" rows="4" required></textarea></label>
+      <button class="primary-button" type="submit">Send enquiry</button>
+    </form>
+  </dialog>
+
+  <button class="mobile-sticky-cta" type="button" data-contact-open>Discuss a mandate</button>
   <script src="/script.js"></script>
 </body>
 </html>
