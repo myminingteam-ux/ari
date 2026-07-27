@@ -10,11 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build deployment archive
+      - name: Validate deployment root
         run: |
-          zip -r victory-consultancy-approved-vercel.zip index.html styles.css script.js vercel.json README.md
+          test -f index.html
+          test -f styles.css
+          test -f script.js
+          test -f vercel.json
+          grep -qi '<!doctype html>' index.html
       - uses: actions/upload-artifact@v4
         with:
-          name: victory-consultancy-approved-vercel
-          path: victory-consultancy-approved-vercel.zip
+          name: victory-consultancy-vercel-fixed
+          path: |
+            index.html
+            styles.css
+            script.js
+            vercel.json
+            README.md
           if-no-files-found: error
